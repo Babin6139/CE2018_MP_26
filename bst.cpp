@@ -124,7 +124,7 @@ void BST::deleteBST(Node* root,int keytoDelete){
                 newNode=newNode->right;
             }
             dat=newNode->data;
-            deleteBST(nodetoDelete->left,newNode->data);
+            deleteBST(nodetoDelete,newNode->data);
             root->data=dat;
             return;
         }
